@@ -7,7 +7,7 @@ const passwordInput = document.getElementById('password-input');
 const unlockButton = document.getElementById('unlock-button');
 const errorMessage = document.getElementById('error-message');
 
-const secretWord = "DG"; // Change this to your secret word
+const secretWord = "forever"; // Change this to your secret word
 
 unlockButton.addEventListener('click', () => {
   if (passwordInput.value.toLowerCase() === secretWord) {
