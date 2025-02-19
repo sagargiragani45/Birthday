@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise for My Love</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+</head>
+<body>
+  <!-- Password Page -->
+  <section id="password-page" class="page">
+    <div class="overlay">
+      <h1>Welcome to Your Surprise</h1>
+      <p>To unlock your special gift, enter the secret word:</p>
+      <input type="text" id="password-input" placeholder="Enter the secret word">
+      <button id="unlock-button">Unlock</button>
+      <p id="error-message" class="hidden">Oops! Try again.</p>
+    </div>
+  </section>
+
+  <!-- Main Website (Hidden Initially) -->
+  <div id="main-website" class="hidden">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#why-i-love-you">Why I Love You</a></li>
+        <li><a href="#memories">Memories</a></li>
+      </ul>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="page">
+      <div class="overlay">
+        <h1>Happy Birthday, My Love</h1>
+        <p>To the one who lights up my world,<br>Today is your day, and I want to remind you<br>just how special you are to me.</p>
+        <button id="Play Music">Play Music 🎵</button>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section id="our-story" class="page">
+      <div class="content fade-in">
+        <h2>Our Story</h2>
+        <p>From the moment I met you, I knew you were someone extraordinary. Your smile, your laugh, your kindness—it all captivated me. Every day with you feels like a new adventure, and I’m so grateful to be by your side.</p>
+        <p>Remember our first date? The way you looked at me made my heart skip a beat. And that time we [insert a special memory]? It’s moments like these that remind me how lucky I am to have you in my life.</p>
+        <p>You are my best friend, my partner, and my greatest love. Here’s to many more memories together.</p>
+      </div>
+    </section>
+
+    <!-- Why I Love You -->
+    <section id="why-i-love-you" class="page">
+      <div class="content fade-in">
+        <h2>Why I Love You</h2>
+        <ul>
+          <li>You have the most beautiful heart, always putting others before yourself.</li>
+          <li>Your smile can brighten even the darkest days.</li>
+          <li>You inspire me to be a better person every single day.</li>
+          <li>You make me laugh like no one else can.</li>
+          <li>You’re my safe place, my home, and my everything.</li>
+        </ul>
+        <p>You are my dream come true, and I fall in love with you more every day.</p>
+      </div>
+    </section>
+
+    <!-- Memories Together -->
+    <section id="memories" class="page">
+      <div class="content fade-in">
+        <h2>Memories Together</h2>
+        
+        <p>Every moment with you is a treasure. Here are some of my favorite memories:</p>
+        <ul>
+          <li>Our first trip together—pure magic.</li>
+          <li>The time we [insert a special memory].</li>
+          <li>Just us, being us. My favorite place in the world.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Thank you for being you. I love you more than words can ever say.<br>Happy Birthday, my forever love.<br>SAGAR GIRAGANI</p>
+    </footer>
+  </div>
+
+  <!-- Audio for Background Music -->
+  <audio id="backgroundMusic" loop>
+    <source src="your-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
